@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="author" content="anonymous">
+    <meta name="keywords" content="Mystery,Mystery Box,Caixa,Caixa Misteriosa">
+    <meta name="description" content="Venda de Caixas Misteriosas">
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/logo-2.png">
+    <title>MYSTERY BOX?</title>
+</head>
+<body>
+<!-- Cabeçalho -->
+
+<nav class="navegacao">
+            <img src="./assets/imgs/logo.svg" title="Logo da Mystery Box" alt="Logo da Mystery Box">
+            <a href="#footer"><h1> MYSTERY BOX? </h1></a>
+            <!-- Botões -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content" onclick="closeNav()">
+                    <a href="#escolher">comprar</a>
+                    <a href="#comentarios">depoimentos</a>
+                    <a href="#contrato">contrato</a>
+                    <a href="#duvidas">dúvidas</a>
+                    <a href="#comprar">lista</a>
+                </div>
+            </div>
+
+            <button class="nav-button" onclick="openNav()">
+            <i class="fa-solid fa-bars fa-2x"></i>
+    </button>
+</nav>
+
+
+<header id="header">
+    <div class="textos">
+        <p>ninguém sabe o que tem na mystery box? até ela ser aberta...?</p>
+        <p class="txt1">compre ou não,<br> receba ou não.</p>
+
+        <p class="txt2">mude sua vida, ou não?</p>
+    </div>
+    <div class="compra1">
+        <div class="caixa1">
+            <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+        </div>
+        <div> 
+            <a href="#escolher"><button>comprar?</button></a>
+        </div>
+    </div>
+</header>
+<!-- Corpo -->
+<main>
+<section id="escolher"> <!--Sessão de escolha de caixa-->
+    <h2>chance única...?</h2>
+    <div class="container"> <!--Carrossel de imagens com as caixas-->
+        <button class="arrow-left control" aria-label="Previous image">◄</button>
+        <button class="arrow-right control" aria-label="Next image">►</button>
+        <div class="gallery-wrapper"> 
+            <div class="gallery">
+                <div class="item current-item">
+                    <p>mystery box #1?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-vendido">
+                        <button onclick="alerta()">vendido?</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #2?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-comprar">
+                        <a href="#comprar">
+                            <button class="selecionar" data-valor="#2">comprar?</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #3?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-comprar">
+                        <a href="#comprar">
+                            <button class="selecionar" data-valor="#3">comprar?</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #4?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-comprar">
+                        <a href="#comprar">
+                            <button class="selecionar" data-valor="#4">comprar?</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #5?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-vendido">
+                        <button onclick="alerta()">vendido?</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #6?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-comprar">
+                        <a href="#comprar">
+                            <button class="selecionar" data-valor="#6">comprar?</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #7?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-vendido">
+                        <button onclick="alerta()">vendido?</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #8?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-comprar">
+                        <a href="#comprar">
+                            <button class="selecionar" data-valor="#8">comprar?</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #9?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-comprar">
+                        <a href="#comprar">
+                            <button class="selecionar" data-valor="#9">comprar?</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #10?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-vendido">
+                        <button onclick="alerta()">vendido?</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #11?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-vendido">
+                        <button onclick="alerta()">vendido?</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #12?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-comprar">
+                        <a href="#comprar">
+                            <button class="selecionar" data-valor="#12">comprar?</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #13?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-vendido">
+                        <button onclick="alerta()">vendido?</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #14?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-comprar">
+                        <a href="#comprar">
+                            <button class="selecionar" data-valor="#14">comprar?</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <p>mystery box #15?</p>
+                    <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+                    <div class="botao-comprar">
+                        <button class="selecionar" data-valor="#15">comprar?</button>
+                    </div>
+                </div>
+                <div class="item estoque">   
+                    <img src="./assets/imgs/logo.svg" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF" class="logo-estoque">
+                    <div class="btn-modal">
+                        <button id="abrir-modal">estoque?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="fechar">&times;</span>
+          <table>
+            <thead>
+              <tr>
+                <th>mystery box</th>
+                <th>disponível</th>
+                <th>selecionar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td>mystery box #1</td>
+                  <td>não</td>
+                  <td><button class="selecionar" data-valor="#1" disabled>Selecionar</button></td>
+                </tr>
+                <tr>
+                  <td>mystery box #2</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#2">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #3</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#3">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #4</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#4">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #5</td>
+                  <td>não</td>
+                  <td><button class="selecionar" data-valor="#5" disabled>Selecionar</button></td>
+                </tr>
+                <tr>
+                  <td>mystery box #6</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#6">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #7</td>
+                  <td>não</td>
+                  <td><button class="selecionar" data-valor="#7" disabled>Selecionar</button></td>
+                </tr>
+                <tr>
+                  <td>mystery box #8</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#8">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #9</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#9">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #10</td>
+                  <td>não</td>
+                  <td><button class="selecionar" data-valor="#10" disabled>Selecionar</button></td>
+                </tr>
+                <tr>
+                  <td>mystery box #11</td>
+                  <td>não</td>
+                  <td><button class="selecionar" data-valor="#11" disabled>Selecionar</button></td>
+                </tr>
+                <tr>
+                  <td>mystery box #12</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#12">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #13</td>
+                  <td>não</td>
+                  <td><button class="selecionar" data-valor="#13" disabled>Selecionar</button></td>
+                </tr>
+                <tr>
+                  <td>mystery box #14</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#14">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #15</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#15">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #16</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#16">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #17</td>
+                  <td>não</td>
+                  <td><button class="selecionar" data-valor="#17" disabled>Selecionar</button></td>
+                </tr>
+                <tr>
+                  <td>mystery box #18</td>
+                  <td>não</td>
+                  <td><button class="selecionar" data-valor="#18" disabled>Selecionar</button></td>
+                </tr>
+                <tr>
+                  <td>mystery box #19</td>
+                  <td>não</td>
+                  <td><button class="selecionar" data-valor="#19" disabled>Selecionar</button></td>
+                </tr>
+                <tr>
+                  <td>mystery box #20</td>
+                  <td>não</td>
+                  <td><button class="selecionar" data-valor="#20" disabled>Selecionar</button></td>
+                </tr>
+                <tr>
+                  <td>mystery box #21</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#21">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #22</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#22">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #23</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#23">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #24</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#24">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #25</td>
+                  <td>não</td>
+                  <td><button class="selecionar" data-valor="#25" disabled>Selecionar</button></td>
+                </tr>
+                <tr>
+                  <td>mystery box #26</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#26">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #27</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#27">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #28</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#28">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #29</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#29">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #30</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#30">Selecionar</button></a></td>
+                </tr>
+                <tr>
+                  <td>mystery box #31</td>
+                  <td>não</td>
+                  <td><button class="selecionar" data-valor="#31" disabled>Selecionar</button></td>
+                </tr>
+                <tr>
+                  <td>mystery box #32</td>
+                  <td>sim</td>
+                  <td><a href="#comprar"><button class="selecionar" data-valor="#32">Selecionar</button></a></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+</section>
+
+<!-- Depoimentos -->
+
+<section id="comentarios"> <!-- Sessão de comentários    -->
+    <h2>mystery box? pode ou não influenciar seu destino.</h2>
+    <section class="cards">
+
+        <div class="card">
+
+            <img src="./assets/imgs/icone-perfil.png" class="user" title="Ícone de Usuário" alt="Ícone de Usuário">
+
+            <h3>sr mistério #13</h3>
+
+            <div class="stars">
+                <img src="./assets/imgs/star.svg" class="star" title="Ícone Estrela de Avaliação" alt="Ícone Estrela de Avaliação">
+            </div>
+
+            <p>
+                &quot;Se está confortável com sua vida, em hipótese alguma assine o contrato,
+                o que eu faço agora?&quot;
+            </p>
+        </div>
+
+        <div class="card">
+
+            <img src="./assets/imgs/icone-perfil.png" class="user" title="Ícone de Usuário" alt="Ícone De Usuário" >
+
+            <h3>sr mistério #7</h3>
+
+            <div class="stars">
+                <img src="./assets/imgs/star.svg" class="star" title="Ícone Estrela de Avaliação" alt="Ícone Estrela de Avaliação">
+                <img src="./assets/imgs/star.svg" class="star" title="Ícone Estrela de Avaliação" alt="Ícone Estrela de Avaliação">
+                <img src="./assets/imgs/star.svg" class="star" title="Ícone Estrela de Avaliação" alt="Ícone Estrela de Avaliação">
+                <img src="./assets/imgs/star.svg" class="star" title="Ícone Estrela de Avaliação" alt="Ícone Estrela de Avaliação">
+                <img src="./assets/imgs/star.svg" class="star" title="Ícone Estrela de Avaliação" alt="Ícone Estrela de Avaliação">
+            </div>
+
+            <p>
+                &quot;Recebi e já estava pronto para reclamar, pois recebi apenas uma carta escrito 'espere', achei ridículo, no outro dia de manhã estava me preparando para ir ao  trabalho, quando vejo uma chave de carro no chão da cozinha, aperto nela e vejo que é de um 'Tesla Model Y'  que está estacionado no outro lado da rua, fiquei muito assustado, mas de fato, aquele carro Tesla agora era meu, e tive que pagar apenas R$ 25,00 bizarro...&quot;
+            </p>
+        </div>
+
+        <div class="card">
+
+            <img src="./assets/imgs/icone-perfil.png" class="user" title="Ícone De Usuário" alt="Ícone De Usuário">
+
+            <h3>sr mistério #25</h3>
+
+            <div class="stars">
+                <img src="./assets/imgs/star.svg" class="star" title="Ícone Estrela de Avaliação" alt="Ícone Estrela de Avaliação">
+            </div>
+
+            <p>
+                &quot;Se pudesse eu dava 0 estrelas.
+                Paguei R$500,00 em uma porcaria de caneca escrita 'Melhor Pai do Mundo' EU NEM SOU PAI, sinceramente... não posso nem reclamar, eu assinei a desgraça do contrato&quot;
+            </p>
+        </div>
+
+    </section>
+</section>
+
+<!--Sessão de possibilidades-->
+
+<section id="possibilidades"> 
+    <h2>1 mystery box? infinitas possibilidades? </h2>
+<div class="centralizar">
+<div class="possibilidades">   
+    <div>
+        <img src="./assets/imgs/possibilidade1.png" title="Ícone Símbolo da Maçonaria" alt="Ícone Símbolo da Maçonaria">
+    </div>
+    <div>
+        <img src="./assets/imgs/possibilidade2.png" title="Ícone Carro" alt="Ícone Carro">
+    </div>
+    <div>
+        <img src="./assets/imgs/possibilidade3.png" title="Ícone Caneca" alt="Ícone Caneca">
+    </div>
+    <div>
+        <img src="./assets/imgs/mysteryboxgif.gif" class="mysteryboxgif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+     </div>
+     <div>
+        <img src="./assets/imgs/infinito.png" class="infinito" title="Ícone Símbolo do Infinito" alt="Ícone Símbolo do Infinito">
+    </div>
+    <div>
+        <a href="#contrato">
+        <button>assinar?</button>
+        </a>
+    </div>
+   
+</div> 
+</div>
+</section>  
+
+<section id="contrato"> <!-- O Contrato-->
+    <h2>o contrato?</h2>
+    <article>
+        <div>
+            <img src="./assets/imgs/contrato.png" title="Contrato Misterioso" alt="Contrato Misterioso">
+        </div>
+        <div class="termos">
+            <p>se for escolhido, terá que assinar ou não um contrato, declarando total compromisso com a mystery box?</p>
+            <div class="contrato-btn">
+                <a href="#comprar"><button>assinar?</button></a>
+            </div>
+        </div>
+    </article>
+</section>
+
+<section id="duvidas"> <!--Dúvidas frequentes-->
+    <h2 class="faq-title">dúvidas frequentes?</h2>
+    <div class="faq">
+        <div class="question">
+            <h3>qual valor?</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25" class="setafaq">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>não sabemos o valor até a mystery box ser aberta.?</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h3>e se eu não puder pagar?</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25" class="setafaq">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>quando o contrato é assinado, o valor é pago de qualquer maneira.?</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h3>o que pode vir na caixa?</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25" class="setafaq">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>o conteúdo só é revelado ao abrir a mystery box.?</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h3>tem devolução?</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25" class="setafaq">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>não.?</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h3>quais requisitos para ser escolhido?</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25" class="setafaq">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>não sabemos, até quem foi escolhido pode não receber.?</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h3>prazo?</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25" class="setafaq">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>o tempo que for preciso.?</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h3>assinatura ou pagamento único?</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25" class="setafaq">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>não sabemos.?</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h3>posso comprar novamente?</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25" class="setafaq">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>é permitido apenas 1 contrato por escolhido.?</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h3>como é feita?</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25" class="setafaq">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>apenas surgiu.?</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h3>?̴̧̩͙͈̝͉̾́́̈̋̈́͑̅͌͆̒͌͒͊͐̀̌͗̄̎͒̿̈́̈́̔͊̇̕̕̕͝?̷̨̡̧̧̢̡̡̛̱̺̰̮̘̼̠̞̙̘̜͉̩̙̠̲̱̮͎͑̑͂̍̽͋̉̾̆̍̄̂̇͘͘?̶̧̨̢̧̨̺͍͉̰̼̬̥̲͖̯̙̳̗̺̼̳̪̣̱̠̳̟̩̖̬̯̜̦̼̰̳̭͍͚̮̩̫͚͍͛̅͑͐̓̊̎͘̚ͅͅ?̶̢̨̧̢̨̨̨̡̛̖͚͙͕̝̝̰̠͉̺̭̩̜̞̳̥͕̼̣̖̞͇͔͚͖̝̲̘̭̉̈͋̒̀̉̄͝ͅͅͅͅͅ?̷̛͕̬̝̭̲͊̆̃̐̉̋́͌̄͛͗̅́̿͐͊̀́̋̐̒̀̈́̄͗͊̆̂͑̿̅̑̇͌͒͋̃͐͗̔̈́͝͝͝͝</h3>
+            <svg width="15" height="10" viewbox="0 0 42 25" class="setafaq">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>m̷̧̨̧̙̣̥̰̰̥̠̩͕̩͖̦̜̯̩̻̪̳̗̮̯̟͎̮̗̝͎͒̈́̀̈̈́̊̓̏͌̌̊̄͑̍̋́́͜ͅy̸̨̛̛͕̲͈͚͖͙̗̼͕̠̼͖̫̹͙̫͔͉̯̍͐͒́̅̊̏̅̋̎͊̔̄̓̏͋̓̾̓̾̌́̆̚̕̕͝͠͠s̴̛̛̻̰͋̎̄̽̇̍̓̀̃̃̇̌͋̀͆̀̿̆̏̒̋͛͋̔̑͂̿̿̕̚͠͝͝t̶̢̡̧̛̛̜̦̝͖̯̞̱̺̭͎̩̥̠̖̲͓̮̻̗̰̗̹̮͎̰̲̲̖͓̩͇̪̞̩̞͇̙̔͑͆͂̾͒̓́̾́̉̐̆̃̔͂̽̈́́̍͐̀̓͛́̑̀́̋̔͛̐͑̓͘͜͜͝ͅͅͅę̷̡̛̘̺̭̻̞̤̠͚̘̳͕̪͎̜̰͚͇̞͈͍̱̱̗̥̱͓̞̀̾̈́̀̀̾͂̀̽́̀̅̀̑̃̿̓̿͑̾̍̀̊̿̔̋̃͂̊̀̑̈́̊̽̀̓̏̾͜͝͝r̵̡̲̖̤͉͓̺̒̌̉̈́y̸̡̢̧̨̛͙̦͙̮̗̠̦̭̣͎͈͔̮͔̘̙̗̖̮̱̥̲̣̮͇͕̗̜̲͓͎̗̱̏̈́̿͆̑̿̇̀̍̄̂͝ͅb̵̩̻̩̻͍̤̘̜̰͓̮̖̘̰͖̥̭̟̓́̇͌͛͑̃͒̈̈͛̀̈́́͛̓̾͐̔̋̒͛͌̓̉̽̄̆ǫ̴̡̨̧̠̩͚̪̗͈̻̟̬̗̼̻̫̙͈̱̪̥͈͍̳̮̟͎̠̭̮̳̹̪̱͎̹̭̣̞͖͙̠͗͑̎̍̂̈́̇̂̇͌̈́͋́̔͐̽͊̓͛̉̈̒̏́̈́̑̓̚͘͠͠ͅͅͅx̴̧̛̠̝̯̬̙̖̘̝͙̯̣̞̤͉̰͈̫̩̪̝̤̩̟̻͑͋͗͗̃͒̆͛́̒̑̋͂́̈́̏̆̈̎̅́̕͘̚̕̕̕͜</p>
+        </div>
+    </div>
+</section>
+
+<!-- formulário -->
+
+<section id="comprar"> <!--Comprar-->
+    <h2>pronto para tomar a decisão mais importante de sua vida?</h2>
+    <div class="formulario">
+    <div>
+        <div class="caixaimg">
+            <img src="./assets/imgs/mysteryboxgif.gif" title="Caixa Mystery Box GIF" alt="Caixa Mystery Box GIF">
+        </div>
+        <div class="btn-escolher">
+            <a href="#escolher">
+                <button>selecionar</button>
+            </a>
+        </div>
+    </div>
+        <div id="formCard">
+            <div id="elementosForm">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="f516b624-d0ae-4031-8f71-dd93f0ddbd32">
+            <input type="hidden" name="redirectTo" value="https://github.com/jooooou">
+
+                <input type="text" name="name" id="nome" placeholder="qual é o seu nome?" title="digite seu nome, mínimo 3 letras" pattern="[A-Za-z\s]{3,99}" required>
+
+                <input type="email" name="email" id="email" placeholder="digite seu melhor e-mail?" title="digite seu email" maxlength="50" required>
+               
+
+                <input type="text" name="message" id="valor-produto" placeholder="qual mystery box escolhida?" pattern="^#(2|3|4|6|8|9|12|14|15|16|21|22|23|24|26|27|28|29|30|32)$" title="Digite um número válido (ex.: #2, #3, #9)" required>
+        
+                <button type="submit" class="btn-list">entrar para lista?</button>
+            </form>
+        </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- Rodapé -->
+
+<footer id="footer">
+        <img src="./assets/imgs/logo.svg" title="Logo da Mystery Box" alt="Logo da Mystery Box">
+        <a href="#"><h1> MYSTERY BOX? </h1></a>
+        <img src="./assets/imgs/logo.svg" title="Logo da Mystery Box" alt="Logo da Mystery Box">
+</footer>
+<script src="./assets/script/script.js"></script>
+</body>
+</html>

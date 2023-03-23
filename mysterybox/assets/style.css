@@ -1,0 +1,1351 @@
+/*Configurações Padrões CSS*/
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family:serif;
+}
+
+:root{
+    font-size:62.6%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border-radius: 5rem;
+  }
+  ::-webkit-scrollbar-track {
+    background:  #666666;
+    border-radius: 5rem;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+/* Body e background */
+
+body{
+    background-color:black;
+    color:white;
+    background-image:url('./imgs/scary-dark.gif');
+    background-size:50rem;
+    background-repeat:space;
+    background-attachment:fixed;
+    font-size:5rem;
+}
+
+
+
+/* Navegação */
+
+.navegacao{
+    display: flex;
+    background-color:black;
+    align-items: center;
+    justify-content: space-between;
+    top:0;
+    position:sticky;
+    /* Testes */
+    z-index:999;
+}
+
+.navegacao h1{
+    text-decoration:underline;
+    font-size:7rem;
+    color:white;
+    text-shadow: 0.4rem 0.1rem 0.3rem rgb(119, 55, 55);
+}
+
+.navegacao h1:hover{
+    color:#8e3030;
+    transition:.5s;
+}
+
+  
+.navegacao img{
+    width:10rem;
+    margin:1rem;
+}
+
+.navegacao img:hover{
+    filter: invert(50%) sepia(11%) saturate(6645%) hue-rotate(331deg) brightness(50%) contrast(86%);
+    transition:2s;
+}
+
+/* Botões */
+
+.nav-button{
+    border:0;
+    background:none;
+    color:white;
+    padding:0.8rem;
+    margin:0.8rem;
+    cursor:pointer;
+}
+
+.nav-button:hover{
+    border:0;
+    background:none;
+    color:rgb(106, 15, 15);
+    padding:0.8rem;
+    margin:0.8rem;
+    cursor:pointer;
+    transition:.5s;
+}
+
+.overlay{
+    width:0;
+    height:100%;
+    background-color:#262626;
+    z-index:1000;
+    position:fixed;
+    left:0;
+    top:0;
+    overflow-x:hidden;
+    transition:.5s;
+}
+
+.overlay-content{
+    position:relative;
+    top:25%;
+    width:100%;
+    text-align:center;
+    margin-top:3rem;
+}
+
+.overlay a{
+    padding:0.8rem;
+    text-decoration:none;
+    color:#818181;
+    display:block;
+    font-size:3.4rem;
+    transition:.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color:#8e3030;
+}
+
+.overlay .closebtn {
+    position:absolute;
+    top:2.5rem;
+    right:4.5rem;
+    font-size:6.0rem;
+}
+
+@media screen and (max-height: 450px){
+    .overlay a{font-size:2.0rem;};
+    .overlay, .closebtn{ font-size:4.0rem; top:1.5rem; right:3.5rem;};
+    .navegacao h1{visibility:hidden;}
+
+}
+
+/* Header */
+
+#header{
+    height:130rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:50rem;
+    place-items:center;
+}
+.textos{
+    display:grid;
+    grid-gap:10rem;
+    font-size:7rem;
+    margin-left:10rem;
+    margin-bottom:90rem;
+    text-shadow: 0.3rem 0.1rem 0.3rem rgb(119, 55, 55);
+}
+
+.textos .txt1{
+    margin-left:10rem;
+}
+
+.textos .txt2{
+    margin-left:20rem;
+}
+
+.compra1{
+    display:grid;
+    grid-gap:10rem; 
+    margin-bottom:100rem;
+}
+
+.caixa1 img{
+    width:50rem;
+}
+
+.compra1 button{
+    margin-left:15rem;
+    background:none;
+	color: white;
+	padding: 1rem;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-style:italic;
+    border-bottom:solid white;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+.compra1 button:hover{
+    border-bottom:solid #8e3030 0.2rem;
+    transition:.5s ease-in;
+    color:#8e3030;
+}
+
+/* Escolher */
+
+#escolher,#comentarios,#contrato,#duvidas{
+    padding-top: 12rem;
+    margin-top: -12rem;
+}
+
+#comprar{
+    padding-top:0.1rem;
+}
+
+#escolher h2{
+    text-shadow: 0.3rem 0.1rem 0.3rem rgb(119, 55, 55);
+}
+
+.container{
+    position:relative;
+    padding:1.5rem;
+    margin:0 auto;
+    z-index:998;
+    width:64rem;
+}
+
+.gallery div{
+    background-color:#2a2a2a;
+}
+
+.gallery div p{
+    display: flex;
+    justify-content: center;
+}
+
+.gallery .botao-vendido{
+    display:flex;
+    justify-content: center;
+    margin-bottom:2rem;
+    color:white;
+}
+
+.gallery a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.gallery .botao-comprar{
+    display:flex;
+    justify-content: center;
+    margin-bottom:2rem;
+    border:none;
+}
+
+.gallery .botao-comprar button{
+    background:none;
+	color: inherit;
+	padding: 1rem;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-style:italic;
+    border-bottom:solid white;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+.gallery .botao-vendido button{
+    background: none;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-style:italic;
+	padding: 1rem;
+    border-bottom:solid white;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+.gallery .botao-vendido button:hover{
+    border-bottom:solid #8e3030 0.2rem;
+    transition:.5s ease-in;
+    color:#8e3030;
+}
+
+.gallery .botao-comprar button:hover{
+    border-bottom:solid #8e3030 0.2rem;
+    transition:.5s ease-in;
+    color:#8e3030;
+}
+
+.gallery-wrapper{
+    overflow-x: auto;
+}
+
+.gallery{
+    display:flex;
+    flex-flow:row nowrap;
+    gap:1.5rem;
+}
+
+.arrow-left,.arrow-right{
+    position: absolute;
+    top:0;
+    left:0;
+    right:auto;
+    bottom:0;
+    font-size:2.0rem;
+    line-height:25rem;
+    width:4.0rem;
+    text-align:center;
+    color:#fff;
+    cursor:pointer;
+    border:none;
+    background:linear-gradient(to left, transparent 0%,black 200%);
+    opacity:0.1;
+    transition: all 600ms ease-in-out;
+    z-index:999
+}
+
+.arrow-right{
+    left:auto;
+    right:0;
+    background:linear-gradient(to right, transparent 0%,black 200%);
+}
+
+.arrow-left:hover,.arrow-right:hover{
+    opacity:1;
+}
+
+.item{
+    flex-shrink:0;
+    opacity:0.6;
+    transition: all 600ms ease-in-out;
+}
+
+.current-item{
+    opacity:1;
+}
+
+.gallery-wrapper::-webkit-scrollbar{
+    display:none;
+}
+
+.estoque{
+    width:44.7rem;
+}
+
+.logo-estoque{
+    margin:2rem;
+    width:20rem;
+    margin-left:12.5rem;
+    margin-top:16rem;
+}
+
+
+/* estoque */
+
+.gallery .btn-modal{
+    display:flex;
+    border:none;
+    justify-content: center;
+}
+
+#modal{
+    overflow:scroll;
+}
+
+button#abrir-modal {
+    background:none;
+	color: inherit;
+	padding: 1rem;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-style:italic;
+    border-bottom:solid white;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+  button#abrir-modal:hover{
+    border-bottom:solid #8e3030 0.2rem;
+    transition:.5s ease-in;
+    color:#8e3030;
+  }
+  
+  /* Estilo do modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(5, 5, 5, 0.467);
+    font-size:2rem;
+    color:rgb(255, 255, 255);
+  }
+  
+  /* Estilo do conteúdo do modal */
+  .modal-content {
+    background-color: #272727;
+    margin: 15% auto;
+    padding: 2rem;
+    border: 0.1rem solid #888;
+    width: 80%;
+  }
+  
+  /* Estilo do botão de fechar */
+  .fechar {
+    color:  #ffffff;
+    float: right;
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+  
+  .fechar:hover,
+  .fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Estilo da tabela de produtos */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 0.8rem;
+  }
+  
+  th {
+    background-color: #3b3b3b;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #484848;
+  }
+  
+  /* Estilo do botão de seleção */
+  button.selecionar {
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0.4rem 0.2rem;
+    cursor: pointer;
+    border-radius: 4;
+    background:none;
+	color: inherit;
+	padding: 1rem;
+	font: inherit;
+	outline: inherit;
+    font-style:italic;
+    border-bottom:solid white;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+
+  button.selecionar:hover{
+    color:#8e3030;
+    border-color:#8e3030;
+    transition:.5s;
+  }
+
+  #modal a{
+    color:inherit;
+  }
+
+/* Comentários */
+
+#comentarios h2{
+    display:flex;
+    justify-content: center;
+    margin:20rem 0 4rem 0;
+    font-size:5rem;
+    text-shadow: 0.3rem 0.1rem 0.3rem rgb(119, 55, 55);
+}
+
+.cards {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    max-width:120rem;
+    margin:0 auto;
+    grid-gap:4rem;
+}
+
+.card{
+    background-color:#272727;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding:3.5rem 4rem;
+    box-shadow:0.6rem 0.6rem 1rem #353535;
+}
+
+.star{
+    filter:brightness(9999%);
+    width:3rem;
+}
+
+.card .user{
+    width:15rem;
+    margin-bottom:1.5rem;
+}
+
+.card h3{
+    font-size:4rem;
+}
+
+.card p{
+    margin-top:2rem;
+    text-align:center;
+    font-size:2.25rem;
+    font-style:italic;
+}
+
+/* Possibilidades */
+
+#possibilidades{
+    margin-top:15rem;
+    margin-bottom:15rem;
+}
+
+.centralizar{
+    display:flex;
+    justify-content: center;
+}
+
+.possibilidades{
+    display:grid;
+    justify-content:center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#possibilidades h2{
+    text-shadow: 0.3rem 0.1rem 0.3rem rgb(119, 55, 55);
+    display:flex;
+    justify-content: center;
+}
+
+#possibilidades img{
+    width:25rem;
+}
+
+#possibilidades .mysteryboxgif{
+    width:30rem;
+}
+
+#possibilidades .infinito{
+    width:30rem;
+    margin-top:10rem;
+}
+
+#possibilidades button{
+    font-size:7rem;
+    color: white;
+    margin-top:12rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-style:italic;
+    border-bottom:solid white;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+#possibilidades button:hover{
+    color:#8e3030;
+    border-color:#8e3030;
+    transition:.5s;
+}
+
+
+/* contrato */
+
+#contrato{
+    margin-bottom:15rem;
+}
+
+
+#contrato h2{
+    text-shadow: 0.3rem 0.1rem 0.3rem rgb(119, 55, 55);
+    display:flex;
+    justify-content: center;
+    margin-bottom:5rem;
+}
+
+
+#contrato article{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contrato article p{
+    font-size:5rem;
+}
+
+#contrato img{
+    width:50rem;
+    margin-left:30rem;
+}
+
+#contrato .contrato-btn{
+  margin-left:8rem;
+}
+
+#contrato .termos{
+    width:45rem;
+}
+
+#contrato button{
+    font-size:5rem;
+    color: white;
+    margin-top:12rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-style:italic;
+    border-bottom:solid white;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+#contrato button:hover{
+    color:#8e3030;
+    border-color:#8e3030;
+    transition:.5s;
+}
+
+#contrato a{
+    width:2rem;
+}
+
+/* Dúvidas */
+
+#duvidas{
+    min-height:100vh;
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.faq-title{
+    font-size:7.5rem;
+    margin:3.2rem 0rem; 
+    text-shadow: 0.3rem 0.1rem 0.3rem rgb(119, 55, 55);
+}
+
+.faq{
+    max-width:700px;
+    margin-top: 3.2rem;
+    padding-bottom:1.6rem;
+    border-bottom:0.02rem solid #fff;
+    cursor:pointer;
+}
+
+.question{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.question h3{
+    font-size:3rem;
+}
+
+.answer{
+    max-height:0;
+    overflow:hidden;
+    transition: max-height .5s ease-in-out;
+}
+
+.answer p{
+    padding-top: 1.6rem;
+    line-height:2.1rem;
+    font-size: 2.5rem;
+    margin-bottom:1rem;
+}
+
+.faq.active .answer{
+    max-height:300px;
+    animation: fade .5s ease-in-out;
+}
+
+.faq.active svg{
+    transform:rotate(180deg);
+}
+
+svg {
+    transition:transform .5s ease-in;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(-1rem)
+    }
+    to {
+        opacity:1;
+        transform:translateY(0rem)
+    }
+}
+
+/* Comprar */
+
+#comprar h2{
+    margin-top:15rem;
+    text-shadow: 0.3rem 0.1rem 0.3rem rgb(119, 55, 55);
+}
+
+.formulario{
+    width:99vw;
+    height:90rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.caixaimg{
+    display:flex;
+    flex-direction: column;
+}
+
+.caixaimg img{
+    width:50rem;
+}
+
+.btn-escolher{
+    display:flex;
+    flex-direction: column;
+    margin-left:15rem;
+}
+
+.btn-escolher button{
+    font-size:5rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-style:italic;
+    border-bottom:solid white;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+.btn-escolher button:hover{
+    color:#8e3030;
+    border-color:#8e3030;
+    transition:.5s;
+  }
+
+.btn-escolher a{
+    width:5rem;
+}
+
+#formulario{
+    width:99%;
+    height:90rem;
+    display:grid;
+    margin-top:15rem;
+}
+
+#formCard{
+    background-color:rgb(23, 23, 23);
+    width:80rem;
+    height:80rem;
+    border-radius:2rem;
+    text-align:center;
+    float:right;
+    border:solid 0.1rem rgb(255, 255, 255);
+}
+
+#formCard:hover{
+    border:solid 0.1rem #8e3030;
+    transition:.5s;
+}
+
+#elementosForm{
+    margin-top:5rem;
+}
+
+
+input{
+    padding: 1.2rem 2.0rem;
+    margin: 5rem 0;
+    background:none;
+    border-radius: 0.4rem;
+    font-size:5rem;
+    color:white;
+    border-bottom:solid 0.1rem rgb(255, 255, 255);
+    border-left:none;
+    border-top:none;
+    border-right:none;
+}
+
+input:hover{
+    border-bottom:solid 0.1rem #8e3030;
+    transition:.5s;
+}
+
+.btn-list{
+    font-size:5rem;
+    width:40rem;
+    height:10rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border:solid 0.1rem white;
+}
+
+.btn-list:hover{
+    color:#8e3030;
+    border-color:#8e3030;
+    transition:.5s;
+}
+
+button {
+    padding: 1.2rem 2.0rem;
+    margin: 0.8rem 0;
+    border-radius: 0.4rem;
+    font-size:3rem;
+    background:none;
+    cursor:pointer;
+    color:rgb(255, 255, 255);  
+}
+
+/* Rodapé */
+
+#footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    transform:scaleY(-1);
+    visibility:visible;
+}
+
+
+#footer h1{
+    text-decoration:underline;
+    font-size:7rem;
+    text-shadow: 0.3rem 0.1rem 0.3rem rgb(119, 55, 55);
+}
+
+#footer h1:hover{
+    color:#8e3030;
+    transition:.5s;
+}
+
+  
+#footer img{
+    width:10rem;
+    margin:1rem;
+}
+
+#footer img:hover{
+    filter: invert(50%) sepia(11%) saturate(6645%) hue-rotate(331deg) brightness(50%) contrast(86%);
+    transition:2s;
+}
+
+#footer a{
+    color:inherit;
+}
+
+/* Responsividade */
+
+            /* Mobile L */
+
+@media (max-width:450px){
+    /* Background */
+
+    body{
+        background-size:70rem;
+        background-repeat:repeat;
+    }
+
+
+
+    /* cabeçalho */
+
+    .navegacao{
+        width:100%;
+        position:fixed;
+    }
+
+    .navegacao h1{
+        font-size:12rem;
+        margin-left:5rem;
+    }
+    
+      
+    .navegacao img{
+        display:none;
+    }
+
+    /* overlay */
+
+    .nav-button{
+        font-size:10rem;
+    }
+    
+    
+    .overlay a{
+        font-size:20rem;
+    }
+    
+    
+    .overlay .closebtn {
+        font-size:20rem;
+    }
+    
+    /* Header */
+
+    #header{
+        height:400rem;
+        width:130rem;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-gap:0;
+    }
+    
+    .textos{
+        font-size:15rem;
+        margin-top:25rem;
+        margin-left:2rem;
+        margin-bottom:0rem;
+    }
+    
+    .textos .txt1{
+        margin-left:10rem;
+    }
+    
+    .textos .txt2{
+        margin-left:20rem;
+    }
+    
+    .compra1{
+        display:grid;
+        grid-gap:10rem; 
+        margin-bottom:1000rem;
+    }
+    
+    .caixa1 img{
+        width:120rem;
+    }
+    
+    .compra1 div button{
+        font-size:20rem;
+        margin-left:20rem;
+    }
+    
+    /* Sessão de escolha */
+
+    #escolher{
+        height:250rem;
+        width:130rem;
+    } 
+    
+    
+    #escolher h2{
+        font-size:17rem;
+
+    }
+    
+    .container{
+        width:120rem;
+        height:202rem;
+        margin-top:10rem;
+    }
+    
+
+    .gallery{
+        height:200rem;
+    }
+
+    .item{
+        width:90rem;
+    }
+    
+    .gallery div p{
+        display: flex;
+        justify-content: center;
+        font-size:12rem;
+    }
+
+    .item p{
+        margin-top:15rem;
+    }
+
+    .item img{
+        width:90rem;
+        margin-top:10rem;
+    }
+    
+    .botao-comprar{
+        font-size:15rem;
+    }
+
+    .botao-vendido{
+        font-size:15rem;
+    }
+
+    .arrow-left,.arrow-right{
+        position: absolute;
+        top:0;
+        left:0;
+        right:auto;
+        bottom:0;
+        font-size:5rem;
+        line-height:25rem;
+        width:10rem;
+        text-align:center;
+        color:#fff;
+        cursor:pointer;
+        border:none;
+        background:linear-gradient(to left, transparent 0%,black 200%);
+        opacity:0.1;
+        transition: all 600ms ease-in-out;
+        z-index:999
+    }
+
+    .arrow-right{
+        left:auto;
+        right:0;
+        background:linear-gradient(to right, transparent 0%,black 200%);
+    }
+
+    .estoque{
+        width:90rem;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+    
+    .estoque .logo-estoque{
+        margin:0;
+        width:70rem;
+        margin-left:0rem;
+        margin-top:0rem;
+    }
+
+    .estoque .btn-modal #abrir-modal{
+        font-size:15rem;
+    }
+
+    /* Modal Estoque*/
+
+    .modal {
+        font-size:8rem;
+      }
+      
+      .modal-content {
+        width: 90%;
+      }
+      
+      .fechar {
+        font-size: 15rem;
+      }
+
+      /* Depoimentos */
+
+      #comentarios{
+        margin-top:15rem;
+        width:130rem;
+        height:700rem;
+      }
+
+      #comentarios h2{
+        margin:0;
+        font-size:17rem;
+    }
+    
+    .cards {
+        display:grid;
+        grid-template-columns:1fr;
+        width:100rem;
+    }
+    
+    .star{
+        filter:brightness(9999%);
+        width:6rem;
+    }
+    
+    .card .user{
+        width:30rem;
+    }
+    
+    .card h3{
+        font-size:10rem;
+    }
+    
+    .card p{
+        font-size:10rem;
+    }
+
+
+    /* Possibilidades */
+      
+    #possibilidades{
+        margin-top:15rem;
+        margin-bottom:15rem;
+        width:130rem;
+        height:350rem;
+    }
+    
+    .centralizar{
+        display:grid;
+        justify-content: center;
+    }
+    
+    .possibilidades{
+        display:grid;
+        justify-content:center;
+        grid-template-columns: 1fr;
+    }
+    
+    #possibilidades h2{
+       font-size:15rem;
+       margin-bottom:5rem;
+    }
+    
+    #possibilidades img{
+        width:50rem;
+    }
+    
+    #possibilidades .mysteryboxgif{
+        width:50rem;
+    }
+    
+    #possibilidades .infinito{
+        width:50rem;
+    }
+    
+    #possibilidades button{
+        font-size:15rem;
+        margin-top:2rem;
+    }
+    
+    /* Contrato */
+
+    #contrato{
+        margin-bottom:15rem;
+        width:130rem;
+        height:300rem;
+    }
+    
+    
+    #contrato h2{
+        font-size:17rem;
+    }
+    
+    
+    #contrato article{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #contrato article p{
+        font-size:5rem;
+    }
+    
+    #contrato img{
+        width:100rem;
+        margin-left:15rem;
+    }
+    
+    #contrato .contrato-btn{
+      margin-left:8rem;
+    }
+    
+    #contrato .termos{
+        width:130rem;
+        margin-top:5rem;
+    }
+
+    #contrato .termos p{
+        font-size:10rem;
+        margin-left:10rem;
+    }
+    
+    #contrato .contrato-btn button{
+        font-size:15rem;
+        margin-top:2rem;
+        margin-left:30rem;
+    }
+
+    /* Dúvidas */
+
+    #duvidas{
+        height:300rem;
+        width:130rem;
+        margin:0;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    
+    .faq-title{
+        font-size:17rem;
+        margin:0;
+        margin-bottom:10rem; 
+    }
+    
+    .faq{
+        width:100rem;
+        height:auto;
+        margin-top:0;
+        padding-bottom:1.6rem;
+        border-bottom:0.02rem solid #fff;
+        cursor:pointer;
+        margin-bottom:1rem;
+    }
+    
+    .question{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    
+    .question h3{
+        font-size:10rem;
+    }
+    
+    .answer p{
+        padding-top: 1.6rem;
+        line-height:7rem;
+        font-size: 7rem;
+        margin-bottom:1rem;
+    }
+    
+    .faq.active svg{
+        transform:rotate(180deg) scale(5);
+    }
+
+    .faq.active{
+        height:auto;
+    }
+
+    .setafaq{
+        transform:scale(5)
+    }
+    
+    /* Formulário  */
+
+    #comprar{
+        width:130rem;
+        height:200rem;
+    }
+
+    #comprar h2{
+        font-size:17rem;
+        margin-top:0rem;
+    }
+    
+    .formulario{
+        width:30rem;
+        height:90rem;
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .caixaimg{
+        display:none;
+    }
+    
+    .btn-escolher{
+        display:none;
+    }
+    
+    
+    #formulario{
+        width:90%;
+        height:90rem;
+        display:grid;
+        margin-top:15rem;
+    }
+    
+    #formCard{
+        background-color:rgb(23, 23, 23);
+        width:130rem;
+        height:100rem;
+        border-radius:2rem;
+        border:solid 0.1rem rgb(255, 255, 255);
+        margin-top:10rem;
+    }
+    
+    #elementosForm{
+        margin-top:5rem;
+    }
+
+    #elementosForm input{
+        font-size: 10rem;
+        border-bottom:solid 0.5rem;
+    }
+
+    #elementosForm .btn-list{
+        font-size:10rem;
+        width:80rem;
+        height:15rem;
+    }
+
+
+    /* Rodapé */
+
+    #footer{
+        width:130rem;
+    }
+    
+    
+    #footer h1{
+        font-size:12rem;
+    }
+    
+      
+    #footer img{
+        width:15rem;
+        margin:1rem;
+    }
+
+}
